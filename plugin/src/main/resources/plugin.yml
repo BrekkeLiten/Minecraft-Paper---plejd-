@@ -1,0 +1,15 @@
+name: PlejdLight
+version: 1.0.0
+main: ke.brek.plejdlight.PlejdLightPlugin
+api-version: '26.3'
+description: Sends your in-game light level to a Plejd dimmer on this Mac.
+author: brek
+commands:
+  plejd:
+    description: Control the Plejd light link
+    usage: /plejd <status|set <0-15>|follow>
+    permission: plejd.use
+permissions:
+  plejd.use:
+    description: Use /plejd
+    default: op

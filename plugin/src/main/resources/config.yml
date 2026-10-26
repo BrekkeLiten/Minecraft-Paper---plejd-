@@ -1,0 +1,15 @@
+# Minecraft username to follow. Empty follows the only player online.
+player: ""
+
+# Python bridge started on this Mac.
+bridge-url: "http://127.0.0.1:8765"
+
+# How often to sample light, in server ticks (20 ticks = 1 second).
+poll-ticks: 10
+
+# Bright in game stays a bright lamp. Set true to flip that.
+invert: false
+
+# keep: leave the lamp alone when the followed player is offline.
+# off: send light 0 when they leave.
+offline: keep

@@ -1,0 +1,9 @@
+{
+  "crypto_key": "replace-with-the-key-from-setup",
+  "output_address": 1,
+  "device_name": "Dimmer",
+  "room": "",
+  "listen": "127.0.0.1",
+  "port": 8765,
+  "ble_address": ""
+}
