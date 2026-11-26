@@ -48,3 +48,7 @@ Join the server. Eye light 0 turns the dimmer off. Light 15 sends dim 255. Each 
 ## What this machine cannot check
 
 A cloud build has no Plejd radio and no Minecraft server. Unit tests cover the light map, the login response, and the dim frame. The lamp itself moves only on the Mac, with the bridge running and Bluetooth allowed.
+
+## License
+
+[MIT](LICENSE). Not affiliated with or supported by Plejd.
