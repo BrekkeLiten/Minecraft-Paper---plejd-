@@ -3,7 +3,7 @@
 ## Bridge
 
 ```bash
-cd plejd-light/bridge
+cd bridge
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -22,7 +22,7 @@ macOS will ask for Bluetooth permission for the Python process. Allow it. The br
 The server must be Paper 26.3, running on this Mac so it can reach the bridge at `127.0.0.1`.
 
 ```bash
-cd plejd-light/plugin
+cd plugin
 ./gradlew build
 ```
 
