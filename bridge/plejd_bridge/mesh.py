@@ -38,13 +38,13 @@ class MeshLink:
 
     async def set_level(self, output_address: int, dim: int) -> None:
         async with self._lock:
-        await self._ensure()
-        client = self._client
-        address = self._address
-        if client is None or address is None:
-            raise RuntimeError("Plejd link dropped before the write")
-        payload = mesh_crypt(self.key, address, dim_frame(output_address, dim))
-        await client.write_gatt_char(DATA_UUID, payload, response=True)
+            await self._ensure()
+            client = self._client
+            address = self._address
+            if client is None or address is None:
+                raise RuntimeError("Plejd link dropped before the write")
+            payload = mesh_crypt(self.key, address, dim_frame(output_address, dim))
+            await client.write_gatt_char(DATA_UUID, payload, response=True)
 
     async def close(self) -> None:
         task = self._ping_task
